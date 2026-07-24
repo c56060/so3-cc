@@ -143,14 +143,22 @@ theme_config:              # 主题配置 (在此处设置会覆盖主题目录�
     head:
       - '<style> 
           #site-title {
+            font-size: 0 !important;
+            line-height: 1 !important;
+            min-height: 100px !important;
+          }
+          #site-title::before {
+            content: "愿你我都活成想象中的自己" !important;
+            display: block !important;
             font-size: 100px !important;
             font-weight: 500 !important;
             font-family: "STXingkai", "Xingkai SC", "行楷", serif !important;
             color: #ffffff !important;
             -webkit-text-stroke: 0.5px rgba(0,0,0,0.0) !important;
-            text-shadow: 0 0 20px rgba(255,255,255,0.6),
-                         0 0 30px rgba(255,255,255,0.3) !important;
+            text-shadow: 0 0 5px rgba(255,255,255,0.7),
+                         0 0 5px rgba(255,255,255,0.3) !important;
             letter-spacing: 4px !important;
+            line-height: 1.2 !important;
           }
         </style>'
   # 例如: bio: "这是我的个人博客"
