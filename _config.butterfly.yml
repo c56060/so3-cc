@@ -30,9 +30,9 @@ menu:
     中学阶段: /categories/zxjd/ || fas fa-graduation-cap
     高中阶段: /categories/gzjd/ || fas fa-book-open
   软件工具 || fas fa-download:
-    PC端: /categories/pc/ || fas fa-desktop
-    移动端: /categories/yd/ || fas fa-mobile-screen
-    插件推荐: /categories/cj/ || fas fa-puzzle-piece
+    电脑软件: /categories/dnrj/ || fas fa-desktop
+    手机软件: /categories/sjrj/ || fas fa-mobile-screen
+    插件推荐: /categories/cjtj/ || fas fa-puzzle-piece
   关于本站: /about/ || fas fa-user
 
 # --------------------------------------
@@ -339,9 +339,9 @@ aside:
     # 卡片按钮
     button:
       enable: true
-      icon: fab fa-github
-      text: 加入社区群
-      link: https://qm.qq.com/q/deJAXNQpEY
+      icon: fab fa-bilibili
+      text: B站主页
+      link: https://space.bilibili.com/1244052425
 # 公告卡片
   card_announcement:
     enable: true
@@ -355,7 +355,7 @@ aside:
      <p style="text-align:center; font-size:12px; margin-top:8px;">点击或扫码｜cc社区群</p>
   # 最新文章卡片
   card_recent_post:
-    enable: true
+    enable: false
     # 显示数量 (设为0显示全部)
     limit: 5
     # 排序依据: date (日期) / updated (更新日期)
@@ -364,7 +364,7 @@ aside:
     sort_order:
   # 最新评论卡片
   card_newest_comments:
-    enable: false
+    enable: true
     sort_order:
     limit: 6
     # 缓存时间 (分钟)，数据存入 localStorage
@@ -383,9 +383,9 @@ aside:
   card_tags:
     enable: true
     # 显示数量 (设为0显示全部)
-    limit: 40
+    limit: 10
     # 是否为标签添加随机颜色
-    color: false
+    color: true
     # 自定义标签颜色 (格式: 标签名: 颜色值)
     custom_colors:
     # 排序方式: random (随机) / name (按名称) / length (按文章数量)
@@ -395,7 +395,7 @@ aside:
     sort_order:
   # 归档卡片
   card_archives:
-    enable: true
+    enable: false
     # 归档类型: monthly (按月) / yearly (按年)
     type: monthly
     # 日期格式 (例如: YYYY年MM月 / MMMM YYYY)
@@ -416,7 +416,7 @@ aside:
     order: -1
   # 网站信息卡片
   card_webinfo:
-    enable: true
+    enable: false
     # 是否显示文章总数
     post_count: true
     # 是否显示最后更新时间
@@ -798,7 +798,7 @@ knocket:
 # 外部链接设置
 # --------------------------------------
 external_link:
-  enable: false         # true: 为外部链接显示小锁图标 / false: 关闭
+  enable: true         # true: 为外部链接显示小锁图标 / false: 关闭
   field: site           # site: 全站生效 / post: 仅文章内生效
   exclude: ''           # 不显示图标的域名，多个用英文逗号分隔
 
@@ -1019,8 +1019,8 @@ fireworks:
 
 # 鼠标点击特效: 爱心
 click_heart:
-  enable: false
-  mobile: false
+  enable: true
+  mobile: true
 
 # 鼠标点击特效: 文字
 clickShowText:

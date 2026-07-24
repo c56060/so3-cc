@@ -93,9 +93,9 @@ category_map:
   小学阶段: xujd
   中学阶段: zxjd
   高中阶段: gzjd
-  PC端: pc
-  移动端: yd
-  插件推荐: cj
+  电脑软件: dnrj
+  手机软件: sjrj
+  插件推荐: cjtj
 tag_map:                  # 标签别名映射 (用于 URL)
 
 # --------------------------------------

@@ -1,0 +1,241 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>RMBG-1.4 发丝级精度开源背景移除模型 | cc社区</title><meta name="author" content="cc"><meta name="copyright" content="cc"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="RMBG-1.4 是由 BRIA AI 开发的开源背景移除模型，基于 IS-Net 架构，能以发丝级精度自动分离图像前景与背景，适用于电商、人像、广告等多类场景。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RMBG-1.4 发丝级精度开源背景移除模型">
+<meta property="og:url" content="https://www.so3.de5.net/dnrj/162415672/index.html">
+<meta property="og:site_name" content="cc社区">
+<meta property="og:description" content="RMBG-1.4 是由 BRIA AI 开发的开源背景移除模型，基于 IS-Net 架构，能以发丝级精度自动分离图像前景与背景，适用于电商、人像、广告等多类场景。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.so3.de5.net/img/dnrj_fm.jpg">
+<meta property="article:published_time" content="2026-07-24T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-07-24T21:12:11.356Z">
+<meta property="article:author" content="cc">
+<meta property="article:tag" content="软件工具">
+<meta property="article:tag" content="AI抠图">
+<meta property="article:tag" content="图像处理">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.so3.de5.net/img/dnrj_fm.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "RMBG-1.4 发丝级精度开源背景移除模型",
+  "url": "https://www.so3.de5.net/dnrj/162415672/",
+  "image": "https://www.so3.de5.net/img/dnrj_fm.jpg",
+  "datePublished": "2026-07-24T16:00:00.000Z",
+  "dateModified": "2026-07-24T21:12:11.356Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "cc",
+      "url": "https://www.so3.de5.net"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/hei.png"><link rel="canonical" href="https://www.so3.de5.net/dnrj/162415672/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.6.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        const data = { value }
+
+        if (ttl != null) {
+          data.expiry = Date.now() + ttl * 86400000
+        }
+
+        localStorage.setItem(key, JSON.stringify(data))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return
+
+        try {
+          const data = JSON.parse(itemStr)
+
+          if (data.expiry && Date.now() > data.expiry) {
+            localStorage.removeItem(key)
+            return
+          }
+
+          return data.value
+        } catch {
+          localStorage.removeItem(key)
+        }
+      }
+    }
+
+    const scriptCache = new Map()
+    const cssCache = new Map()
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => {
+        if (scriptCache.has(url)) {
+          return scriptCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+
+          script.src = url
+          script.async = true
+
+          for (const key in attr) {
+            script.setAttribute(key, attr[key])
+          }
+
+          script.onload = resolve
+          script.onerror = reject
+
+          document.head.appendChild(script)
+        })
+
+        scriptCache.set(url, promise)
+
+        return promise
+      },
+      getCSS: (url, id) => {
+        if (cssCache.has(url)) {
+          return cssCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+
+          link.rel = 'stylesheet'
+          link.href = url
+
+          if (id) {
+            link.id = id
+          }
+
+          link.onload = resolve
+          link.onerror = reject
+
+          document.head.appendChild(link)
+        })
+
+        cssCache.set(url, promise)
+
+        return promise
+      },
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const metaThemeColor = document.querySelector('meta[name="theme-color"]')
+      const activateDarkMode = () => {
+        document.documentElement.dataset.theme = 'dark'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.dataset.theme = 'light'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'RMBG-1.4 发丝级精度开源背景移除模型',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><style> #site-title { font-size: 0 !important; line-height: 1 !important; min-height: 100px !important; } #site-title::before { content: "愿你我都活成想象中的自己" !important; display: block !important; font-size: 100px !important; font-weight: 500 !important; font-family: "STXingkai", "Xingkai SC", "行楷", serif !important; color: #ffffff !important; -webkit-text-stroke: 0.5px rgba(0,0,0,0.0) !important; text-shadow: 0 0 5px rgba(255,255,255,0.7), 0 0 5px rgba(255,255,255,0.3) !important; letter-spacing: 4px !important; line-height: 1.2 !important; } </style><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/touxiang.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">183</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">172</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/zsfx/"><i class="fa-fw fas fa-book"></i><span> 知识分享</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-archive"></i><span> 学习资料</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/yxxj/"><i class="fa-fw fas fa-child"></i><span> 幼小衔接</span></a></li><li><a class="site-page child" href="/categories/xujd/"><i class="fa-fw fas fa-school"></i><span> 小学阶段</span></a></li><li><a class="site-page child" href="/categories/zxjd/"><i class="fa-fw fas fa-graduation-cap"></i><span> 中学阶段</span></a></li><li><a class="site-page child" href="/categories/gzjd/"><i class="fa-fw fas fa-book-open"></i><span> 高中阶段</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-download"></i><span> 软件工具</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/dnrj/"><i class="fa-fw fas fa-desktop"></i><span> 电脑软件</span></a></li><li><a class="site-page child" href="/categories/sjrj/"><i class="fa-fw fas fa-mobile-screen"></i><span> 手机软件</span></a></li><li><a class="site-page child" href="/categories/cjtj/"><i class="fa-fw fas fa-puzzle-piece"></i><span> 插件推荐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于本站</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url(/img/rjgj_fm.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">cc社区</span></a><a class="nav-page-title" href="/"><span class="site-name">RMBG-1.4 发丝级精度开源背景移除模型</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/zsfx/"><i class="fa-fw fas fa-book"></i><span> 知识分享</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-archive"></i><span> 学习资料</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/yxxj/"><i class="fa-fw fas fa-child"></i><span> 幼小衔接</span></a></li><li><a class="site-page child" href="/categories/xujd/"><i class="fa-fw fas fa-school"></i><span> 小学阶段</span></a></li><li><a class="site-page child" href="/categories/zxjd/"><i class="fa-fw fas fa-graduation-cap"></i><span> 中学阶段</span></a></li><li><a class="site-page child" href="/categories/gzjd/"><i class="fa-fw fas fa-book-open"></i><span> 高中阶段</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-download"></i><span> 软件工具</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/dnrj/"><i class="fa-fw fas fa-desktop"></i><span> 电脑软件</span></a></li><li><a class="site-page child" href="/categories/sjrj/"><i class="fa-fw fas fa-mobile-screen"></i><span> 手机软件</span></a></li><li><a class="site-page child" href="/categories/cjtj/"><i class="fa-fw fas fa-puzzle-piece"></i><span> 插件推荐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于本站</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">RMBG-1.4 发丝级精度开源背景移除模型</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-07-24T16:00:00.000Z" title="发表于 2026-07-25 00:00:00">2026-07-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-07-24T21:12:11.356Z" title="更新于 2026-07-25 05:12:11">2026-07-25</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/dnrj/">电脑软件</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="🛠️-工具简介"><a href="#🛠️-工具简介" class="headerlink" title="🛠️ 工具简介"></a>🛠️ 工具简介</h2><p>RMBG-1.4（BRIA Background Removal v1.4）是由 BRIA AI 团队开源的背景移除模型，核心目标是把图像中的前景主体从背景中干净地分离出来，生成带 Alpha 透明通道的 PNG 素材。它在 IS-Net 架构基础上结合 BRIA 自有的训练方案与专业级数据集进行了增强，在多种图像类型上的分割精度与效率均位列开源模型第一梯队<span data-allow-html class='source-item source-aggregated' data-group-key='source-group-4' data-url='https://huggingface.co/briaai/RMBG-1.4' data-id='turn0search1'><span data-allow-html class='source-item-num' data-group-key='source-group-4' data-id='turn0search1' data-url='https://huggingface.co/briaai/RMBG-1.4'><span class='source-item-num-name' data-allow-html>huggingface.co</span><span data-allow-html class='source-item-num-count'></span></span></span>。</p>
+<p>该模型使用了超过 12,000 张高质量、高分辨率、逐像素人工标注的完全授权图像进行训练，数据分布覆盖通用库存图、电商商品、游戏素材和广告内容，并在性别、种族、残障人群等维度做了平衡，兼顾内容安全与偏差控制，使其在企业级大规模内容生产场景中具备合规可用性<span data-allow-html class='source-item source-aggregated' data-group-key='source-group-5' data-url='https://huggingface.co/briaai/RMBG-1.4' data-id='turn0search1'><span data-allow-html class='source-item-num' data-group-key='source-group-5' data-id='turn0search1' data-url='https://huggingface.co/briaai/RMBG-1.4'><span class='source-item-num-name' data-allow-html>huggingface.co</span><span data-allow-html class='source-item-num-count'></span></span></span>。</p>
+<p>它既可以通过 PyTorch + Transformers 在本地或服务端运行，也能借助 Transformers.js 在浏览器中通过 WebGPU 直接推理，无需上传到第三方服务器，适合电商美工、设计师、内容创作者、AIGC 玩家以及对数据隐私有要求的开发者使用<span data-allow-html class='source-item source-aggregated' data-group-key='source-group-0' data-url='https://github.com/addyosmani/bg-remove' data-id='turn0search0'><span data-allow-html class='source-item-num' data-group-key='source-group-0' data-id='turn0search0' data-url='https://github.com/addyosmani/bg-remove'><span class='source-item-num-name' data-allow-html>github.com</span><span data-allow-html class='source-item-num-count'>+1</span></span></span>。</p>
+<h3 id="✨-核心功能"><a href="#✨-核心功能" class="headerlink" title="✨ 核心功能"></a>✨ 核心功能</h3><ul>
+<li><strong>发丝级边缘分割</strong>：对头发、毛发、羽毛、薄纱、玻璃等半透明与复杂边缘能做到像素级过渡，输出非二值化的渐变 Alpha 掩码，避免传统工具常见的锯齿与灰边<span data-allow-html class='source-item source-aggregated' data-group-key='source-group-1' data-url='https://huggingface.co/briaai/RMBG-1.4' data-id='turn0search1'><span data-allow-html class='source-item-num' data-group-key='source-group-1' data-id='turn0search1' data-url='https://huggingface.co/briaai/RMBG-1.4'><span class='source-item-num-name' data-allow-html>huggingface.co</span><span data-allow-html class='source-item-num-count'>+1</span></span></span>。</li>
+<li><strong>全自动主体识别</strong>：无需手动描边或输入提示词，模型直接分析整张图的像素结构、纹理与光影，自动判断前景主体，一键完成背景移除<span data-allow-html class='source-item source-aggregated' data-group-key='source-group-6' data-url='https://huggingface.co/briaai/RMBG-1.4' data-id='turn0search1'><span data-allow-html class='source-item-num' data-group-key='source-group-6' data-id='turn0search1' data-url='https://huggingface.co/briaai/RMBG-1.4'><span class='source-item-num-name' data-allow-html>huggingface.co</span><span data-allow-html class='source-item-num-count'></span></span></span>。</li>
+<li><strong>全授权数据训练，合规可商用</strong>：训练集全部为合法授权图像，平衡了性别、族裔等分布，适合对内容安全与版权合规有要求的企业级场景，商用需向 BRIA 申请商业授权<span data-allow-html class='source-item source-aggregated' data-group-key='source-group-7' data-url='https://huggingface.co/briaai/RMBG-1.4' data-id='turn0search1'><span data-allow-html class='source-item-num' data-group-key='source-group-7' data-id='turn0search1' data-url='https://huggingface.co/briaai/RMBG-1.4'><span class='source-item-num-name' data-allow-html>huggingface.co</span><span data-allow-html class='source-item-num-count'></span></span></span>。</li>
+<li><strong>多端部署能力</strong>：支持 PyTorch + Transformers 本地推理，也可通过 Transformers.js + WebGPU 在浏览器端本地运行，还能作为 ComfyUI 自定义节点接入 AIGC 工作流<span data-allow-html class='source-item source-aggregated' data-group-key='source-group-2' data-url='https://huggingface.co/briaai/RMBG-1.4/tree/main' data-id='turn0search3'><span data-allow-html class='source-item-num' data-group-key='source-group-2' data-id='turn0search3' data-url='https://huggingface.co/briaai/RMBG-1.4/tree/main'><span class='source-item-num-name' data-allow-html>huggingface.co</span><span data-allow-html class='source-item-num-count'>+1</span></span></span>。</li>
+<li><strong>多类别场景适配</strong>：训练数据涵盖商品、人像、动物、文字、游戏与广告素材，对纯色背景与非纯色背景、单主体与多主体场景均有稳定表现<span data-allow-html class='source-item source-aggregated' data-group-key='source-group-8' data-url='https://huggingface.co/briaai/RMBG-1.4' data-id='turn0search1'><span data-allow-html class='source-item-num' data-group-key='source-group-8' data-id='turn0search1' data-url='https://huggingface.co/briaai/RMBG-1.4'><span class='source-item-num-name' data-allow-html>huggingface.co</span><span data-allow-html class='source-item-num-count'></span></span></span>。</li>
+</ul>
+<h2 id="🎬-视频教程"><a href="#🎬-视频教程" class="headerlink" title="🎬 视频教程"></a>🎬 视频教程</h2><iframe src="//player.bilibili.com/player.html?bvid=BV1VFEDzcEUA&page=1" width="800" height="450" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<h2 id="💡-适用场景"><a href="#💡-适用场景" class="headerlink" title="💡 适用场景"></a>💡 适用场景</h2><p>RMBG-1.4 在需要”把主体干净地从背景里拿出来”的环节都能发挥价值。电商场景下，可用于批量处理商品主图、制作白底图或换背景素材，把原本需要美工十几分钟的手工抠图压缩到几秒<span data-allow-html class='source-item source-aggregated' data-group-key='source-group-9' data-url='https://blog.csdn.net/weixin_30248619/article/details/157442778' data-id='turn1search3'><span data-allow-html class='source-item-num' data-group-key='source-group-9' data-id='turn1search3' data-url='https://blog.csdn.net/weixin_30248619/article/details/157442778'><span class='source-item-num-name' data-allow-html>csdn.net</span><span data-allow-html class='source-item-num-count'></span></span></span>。人像场景下，对飘逸发丝、逆光发际线、毛绒宠物的细节保留尤为突出，适合证件照换底、社交媒体头像、创意海报合成<span data-allow-html class='source-item source-aggregated' data-group-key='source-group-10' data-url='https://tencentcloud.csdn.net/69eab41b54b52172bc6efb73.html' data-id='turn2search10'><span data-allow-html class='source-item-num' data-group-key='source-group-10' data-id='turn2search10' data-url='https://tencentcloud.csdn.net/69eab41b54b52172bc6efb73.html'><span class='source-item-num-name' data-allow-html>csdn.net</span><span data-allow-html class='source-item-num-count'></span></span></span>。</p>
+<p>对于 AIGC 创作者，它可以把 Stable Diffusion、DALL·E 生成的角色图一键转成透明 PNG，再接入 ComfyUI、Blender、剪映等工具做后续合成，打通 AI 创作流水线的”最后一环”<span data-allow-html class='source-item source-aggregated' data-group-key='source-group-11' data-url='https://blog.csdn.net/weixin_35756637/article/details/157787489' data-id='turn2search17'><span data-allow-html class='source-item-num' data-group-key='source-group-11' data-id='turn2search17' data-url='https://blog.csdn.net/weixin_35756637/article/details/157787489'><span class='source-item-num-name' data-allow-html>csdn.net</span><span data-allow-html class='source-item-num-count'></span></span></span>。同时也适合内容审核、广告 banner 制作、游戏角色与场景素材裁剪，以及对数据隐私敏感、要求本地处理的浏览器端抠图应用<span data-allow-html class='source-item source-aggregated' data-group-key='source-group-3' data-url='https://www.chinaz.com/2024/0207/1596192.shtml' data-id='turn2search5'><span data-allow-html class='source-item-num' data-group-key='source-group-3' data-id='turn2search5' data-url='https://www.chinaz.com/2024/0207/1596192.shtml'><span class='source-item-num-name' data-allow-html>chinaz.com</span><span data-allow-html class='source-item-num-count'>+1</span></span></span>。</p>
+<h2 id="🖼️-工具预览"><a href="#🖼️-工具预览" class="headerlink" title="🖼️ 工具预览"></a>🖼️ 工具预览</h2><p><img src="https://img5.de5.net/file/260725041042.png" alt="预览图1"><br><img src="https://img5.de5.net/file/260725041043.png" alt="预览图2"></p>
+<h2 id="🔗-资源地址"><a href="#🔗-资源地址" class="headerlink" title="🔗 资源地址"></a>🔗 资源地址</h2><ul>
+<li><strong>GitHub 仓库</strong>：<a target="_blank" rel="noopener" href="https://github.com/chenxwh/cog-RMBG">GitHub</a></li>
+<li><strong>官网&#x2F;下载地址</strong>：<a target="_blank" rel="noopener" href="https://huggingface.co/briaai/RMBG-1.4">Hugging Face 模型主页</a> ｜ <a target="_blank" rel="noopener" href="https://bria.ai/">BRIA AI 官网</a></li>
+</ul>
+<h2 id="📥-下载地址"><a href="#📥-下载地址" class="headerlink" title="📥 下载地址"></a>📥 下载地址</h2><ul>
+<li><strong>下载地址①</strong>：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1uGRZpe4k8aKmwVmVB6UAfg?pwd=b6sk">百度网盘</a></li>
+<li><strong>下载地址②</strong>：<a target="_blank" rel="noopener" href="https://pan.quark.cn/s/d257e812bf5d">夸克网盘</a></li>
+<li><strong>下载地址③</strong>：<a target="_blank" rel="noopener" href="https://pan.xunlei.com/s/VOyKy1MqfTx4Eyo4aeSQL4kaA1?pwd=eyjv#">迅雷网盘</a></li>
+</ul>
+<hr>
+<h2 id="📝-更新日志"><a href="#📝-更新日志" class="headerlink" title="📝 更新日志"></a>📝 更新日志</h2><ul>
+<li><strong>2026-07-25</strong>：首次发布，收录该工具。</li>
+</ul>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/">软件工具</a><a class="post-meta__tags" href="/tags/AI%E6%8A%A0%E5%9B%BE/">AI抠图</a><a class="post-meta__tags" href="/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/">图像处理</a></div><div class="post-share"><div class="social-share" data-image="/img/dnrj_fm.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/yxxj/170548491/" title="魔法汉字"><img class="cover" src="/img/yxxj_fm.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">魔法汉字</div></div><div class="info-2"><div class="info-item-1">一套以偏旁部首归类为核心的汉字学习资料，通过“木、火、水、心”等基础部首，帮助孩子系统识记汉字并理解其构成。</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/touxiang.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">cc</div><div class="author-info-description">学习资料分享、实用软件工具下载。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">183</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">172</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://space.bilibili.com/1244052425"><i class="fab fa-bilibili"></i><span>B站主页</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><p>这里是专注于知识与软件分享的站点，我会持续更新实用学习资料、高效软件工具。</p>
+<p>如果你有优质的学习资源或好用的软件小工具，欢迎联系我投稿，整理后统一分享给大家！</p>
+<br>
+<a target="_blank" rel="noopener" href="https://qm.qq.com/q/deJAXNQpEY">
+ <img src="/img/qun.png" style="width: 100%; display:block; margin:0 auto;" alt="cc社区群">
+</a>
+<p style="text-align:center; font-size:12px; margin-top:8px;">点击或扫码｜cc社区群</p>
+</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9B%A0%EF%B8%8F-%E5%B7%A5%E5%85%B7%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">🛠️ 工具简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%9C%A8-%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD"><span class="toc-number">1.1.</span> <span class="toc-text">✨ 核心功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%AC-%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">🎬 视频教程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%92%A1-%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-number">3.</span> <span class="toc-text">💡 适用场景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%96%BC%EF%B8%8F-%E5%B7%A5%E5%85%B7%E9%A2%84%E8%A7%88"><span class="toc-number">4.</span> <span class="toc-text">🖼️ 工具预览</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%97-%E8%B5%84%E6%BA%90%E5%9C%B0%E5%9D%80"><span class="toc-number">5.</span> <span class="toc-text">🔗 资源地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%A5-%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80"><span class="toc-number">6.</span> <span class="toc-text">📥 下载地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%9D-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97"><span class="toc-number">7.</span> <span class="toc-text">📝 更新日志</span></a></li></ol></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By cc</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.6.1"></script><script src="/js/main.js?v=5.6.1"></script><div class="js-pjax"></div><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/click-heart.min.js" async="async" mobile="true"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="请输入搜索内容" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.6.1"></script></div></div></body></html>
