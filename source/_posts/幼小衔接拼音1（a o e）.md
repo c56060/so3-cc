@@ -7,7 +7,7 @@ tags:
   - 单韵母
 description: 一份幼小衔接拼音练习资料，专注于单韵母a、o、e的认读、书写与拼读练习，包含儿歌和图片辅助记忆。
 cover: /img/yxxj_fm.jpg
-top_img: /img/yxxj_fm.jpg
+top_img: /img/xxzl_fm.jpg
 comments: true
 abbrlink: 2083465278
 date: 2026-07-24 00:00:00
