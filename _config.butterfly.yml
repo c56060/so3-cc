@@ -617,7 +617,7 @@ share:
   # https://github.com/overtrue/share.js
   sharejs:
     # 启用的分享平台
-    sites: facebook,x,wechat,weibo,qq
+    sites: facebook,x,weibo,wechat,qq
 
 # AddToAny 配置
   # https://www.addtoany.com/
