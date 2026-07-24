@@ -132,6 +132,20 @@ theme: butterfly           # 当前使用的主题名称 (必须与主题文件�
 # --------------------------------------
 # 方式1: 直接在站点配置文件中设置 (优先级最高)
 theme_config:              # 主题配置 (在此处设置会覆盖主题目录下的 _config.yml)
+  inject: 
+    head:
+      - '<style> 
+          #site-title {
+            font-size: 100px !important;
+            font-weight: 500 !important;
+            font-family: "STXingkai", "Xingkai SC", "行楷", serif !important;
+            color: #ffffff !important;
+            -webkit-text-stroke: 0.5px rgba(0,0,0,0.0) !important;
+            text-shadow: 0 0 20px rgba(255,255,255,0.6),
+                         0 0 30px rgba(255,255,255,0.3) !important;
+            letter-spacing: 4px !important;
+          }
+        </style>'
   # 例如: bio: "这是我的个人博客"
 
 # 方式2: 使用独立的主题配置文件 (如 _config.butterfly.yml)
@@ -167,3 +181,4 @@ search:
   path: search.xml
   field: post
   content: true
+
