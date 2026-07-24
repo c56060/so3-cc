@@ -31,8 +31,8 @@ menu:
     高中阶段: /categories/gzjd/ || fas fa-book-open
   软件工具 || fas fa-download:
     PC端: /categories/pc/ || fas fa-desktop
-    移动端: /categories/mobile/ || fas fa-mobile-screen
-    插件推荐: /categories/plugin/ || fas fa-puzzle-piece
+    移动端: /categories/yd/ || fas fa-mobile-screen
+    插件推荐: /categories/cj/ || fas fa-puzzle-piece
   关于本站: /about/ || fas fa-user
 
 # --------------------------------------

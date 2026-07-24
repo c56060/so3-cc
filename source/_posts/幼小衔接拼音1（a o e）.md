@@ -1,6 +1,6 @@
 ---
 title: 幼小衔接拼音1（a o e）
-categories: 学习资料
+categories: 幼小衔接
 tags:
   - 幼小衔接
   - 拼音学习
