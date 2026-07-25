@@ -245,17 +245,17 @@ post_copyright:
 
 # 打赏/赞助设置
 reward:
-  enable: false
+  enable: true
   # 打赏按钮文字
-  text:
+  text: 如果觉得有用，请我喝杯咖啡 ☕
   # 二维码图片列表
   QR_code:
-    # - img: /img/wechat.jpg
-    #   link:
-    #   text: wechat
-    # - img: /img/alipay.jpg
-    #   link:
-    #   text: alipay
+    - img: https://img5.de5.net/file/xtyt/1784976651773_vx.png
+      link:
+      text: 微信
+    - img: https://img5.de5.net/file/xtyt/1784976648334_zfb.png
+      link:
+      text: 支付宝
 
 # 文章编辑链接
 # 方便在线浏览和编辑博客源码
