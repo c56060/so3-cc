@@ -29,8 +29,23 @@ function copyMail(){
 </script>
 
 <div align="center">
-  <img src="https://img5.de5.net/file/260725053213.png" width="280"/>
+  <img src="https://img5.de5.net/file/xtyt/1784976645711_hym.png" width="280"/>
   <p>扫码添加微信交流反馈</p>
+</div>
+
+## 赞赏支持
+本站全部学习素材、工具软件永久免费无偿分享，筛选、实测、整理资源需要耗费大量业余时间。
+如果本站分享的内容对你有所帮助，可自愿小额支持，你的每一份善意，都是持续更新、整理资源的动力。
+
+<div align="center" style="display:flex;gap:30px;justify-content:center;flex-wrap:wrap;">
+  <div>
+    <img src="https://img5.de5.net/file/xtyt/1784976651773_vx.png" width="240"/>
+    <p style="margin-top:8px;color:#666;">微信 | 随心小额支持，感恩相遇</p>
+  </div>
+  <div>
+    <img src="https://img5.de5.net/file/xtyt/1784976648334_zfb.png" width="240"/>
+    <p style="margin-top:8px;color:#666;">支付宝 | 所有资源永久免费分享</p>
+  </div>
 </div>
 
 ### 版权声明

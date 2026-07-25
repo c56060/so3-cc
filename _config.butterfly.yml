@@ -691,12 +691,17 @@ valine:
 # Waline 配置 (基于 Valine 的服务端评论系统)
 # https://waline.js.org/
 waline:
-  serverURL:
-  # 评论框背景图
+  serverURL: "https://waline-blog-hazel-omega.vercel.app" # 替换成你Vercel部署后的链接
   bg:
   # 是否使用 Waline 的访问量统计
   pageview: false
   option:
+    meta: ['nick', 'mail'] # 评论填写项：昵称、邮箱
+    requiredMeta: ['nick'] # 必填项：仅昵称必填
+    wordLimit: 250 # 单条评论字数上限
+    pageSize: 10 # 每页展示评论条数
+    avatar: "monsterid" # 头像样式
+    lang: "zh-CN" # 简体中文
 
 # Utterances 配置 (基于 GitHub Issue)
 # https://utteranc.es/
