@@ -18,8 +18,9 @@ timezone: 'Asia/Shanghai'               # 网站时区 (留空则使用系统时
 # 网址设置 (URL)
 # --------------------------------------
 # 务必正确设置，否则会影响搜索、评论等功能
-url: https://www.so3.de5.net    # 网站最终部署地址 (必须以 http:// 或 https:// 开头)
-permalink: :category/:abbrlink/        # 文章永久链接格式
+url: https://bk.ccsq.top    # 修改这里！！
+root: /
+permalink: :category/:abbrlink/        # 文章永久链接格式（维持你现有格式不变）
 permalink_defaults:        # 链接中各段的默认值
 pretty_urls:               # 美化 URL 设置
   trailing_index: true     # 是否移除链接末尾的 'index.html' (true: 保留, false: 移除)
