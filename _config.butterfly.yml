@@ -1206,6 +1206,7 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <meta name="baidu-site-verification" content="codeva-Qyo993qBhe" />
   bottom:
     # - <script src="xxxx"></script>
 
